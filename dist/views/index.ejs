@@ -3,15 +3,29 @@
 <head>
 	<title>Mapping History</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+	<link href="https://fonts.googleapis.com/css?family=Bungee|Cinzel:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="/main.css">
 </head>
 <body>
-	<style>
-		#mapid { height: 180px; }
-	</style>
-	<div class="container">
-		<h1>Hello World</h1>
-		<div id="mapid"></div>
+
+	<div class="carousel slide carousel-fade" data-ride="carousel">
+	    <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+	    <div class="item active">
+	    </div>
+	    <div class="item">
+	    </div>
+	    <div class="item">
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Remeber to put all the content you want on top of the slider below the slider code -->
+
+	<div class="front-page-container">
+	  <h1>History Map</h1>
+	  <div id="explainer"></div>
 	</div>
 
 
@@ -19,17 +33,19 @@
   <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
 
 	<script>
-		var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+		// var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
-		L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-		    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-		    maxZoom: 18,
-		   	id: 'mapbox.mapbox-streets-v7',
-				accessToken: 'pk.eyJ1IjoiYmVucGlnZ290IiwiYSI6ImYwU2swWkUifQ.MJDSGs4FaCV1GlurP-nIDA'
-		}).addTo(mymap);
+		// L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+		//     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		//     maxZoom: 18,
+		//    	id: 'mapbox.streets',
+		// 		accessToken: 'pk.eyJ1IjoiYmVucGlnZ290IiwiYSI6ImYwU2swWkUifQ.MJDSGs4FaCV1GlurP-nIDA'
+		// }).addTo(mymap);
 	</script>
 
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/bundle.js"></script>
 </body>
 </html>
