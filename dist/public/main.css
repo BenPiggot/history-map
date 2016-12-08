@@ -99,3 +99,22 @@ html {
   color: white;
   font-size: 80px;
 }
+
+.front-page-container p {
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 1.5rem;
+}
+
+.front-page-container button {
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 0;
+}
+
+.front-page-btn.active.focus, .front-page-btn.active:focus, 
+.front-page-btn.focus, .front-page-btn:active.focus, 
+.front-page-btn:active:focus, .front-page-btn:focus {
+    outline: none;
+}
