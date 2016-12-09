@@ -15,5 +15,3 @@ var _Explainer2 = _interopRequireDefault(_Explainer);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 $('.carousel').carousel();
-
-if (document.getElementById('explainer')) _reactDom2.default.render(_react2.default.createElement(_Explainer2.default, null), document.getElementById('explainer'));
