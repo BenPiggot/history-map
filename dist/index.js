@@ -16,15 +16,20 @@ var _bodyParser = require('body-parser');
 
 var _bodyParser2 = _interopRequireDefault(_bodyParser);
 
+var _maps = require('./controllers/maps');
+
+var _maps2 = _interopRequireDefault(_maps);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var app = (0, _express2.default)();
 var router = _express2.default.Router();
 
-console.log(__dirname);
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 app.use(_express2.default.static(__dirname + "/public"));
+
+app.use("/maps", _maps2.default);
 
 app.get('/', function (req, res) {
   res.render('index');

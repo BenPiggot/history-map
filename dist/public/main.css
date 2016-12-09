@@ -118,3 +118,37 @@ html {
 .front-page-btn:active:focus, .front-page-btn:focus {
     outline: none;
 }
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+
+/* MAPS VIEWS */
+#mapid {
+  height: 1000px;
+}
+
+.map-index-header {
+  position: absolute;
+  left: 20%;
+  width: 60%;
+  top: 5%;
+  color: black;
+  font-size: 60px;
+  text-align: center;
+}
