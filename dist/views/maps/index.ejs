@@ -3,20 +3,12 @@
 <body>
   <!-- Remeber to put all the content you want on top of the slider below the slider code -->
   <div id='mapid'></div>
-  <div class='map-index-header'>Map Landing Page</div>
+  <div class='shadow-cover'>
+    <div class='map-index-header'>Map Landing Page</div>
+  </div>
+
   <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
   <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
-
-  <script>
-    var mymap = L.map('mapid').setView([51.505, -0.09], 13);
-
-    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-        maxZoom: 18,
-         id: 'mapbox.streets',
-       accessToken: 'pk.eyJ1IjoiYmVucGlnZ290IiwiYSI6ImYwU2swWkUifQ.MJDSGs4FaCV1GlurP-nIDA'
-    }).addTo(mymap);
-  </script>
 
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>

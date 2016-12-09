@@ -1,8 +1,3 @@
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 .carousel-fade .carousel-inner .item {
   opacity: 0;
   transition: opacity 1s;
@@ -158,7 +153,15 @@ html {
   left: 20%;
   width: 60%;
   top: 5%;
-  color: black;
+  color: white;
   font-size: 60px;
   text-align: center;
+}
+
+.shadow-cover {
+  position: absolute;
+  top: 0em;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.62);
 }

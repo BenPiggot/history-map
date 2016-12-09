@@ -1,0 +1,24 @@
+- Maps
+  - Names
+  - Markers
+  - Lat
+  - Long
+  - Discussion
+  - Newsfeed
+
+- Markers
+  - Title
+  - Text
+  - Image
+  - Lat
+  - Long
+
+- Newsfeed (API only?)
+
+- Discussion
+  - Comments
+
+- Comments
+  - Author
+  - Time
+  - Text
