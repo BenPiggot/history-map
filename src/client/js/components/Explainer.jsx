@@ -57,7 +57,10 @@ class Explainer extends Component {
     return (
     <div>
       { this.renderView() }
-      <button onClick={this.handleClick.bind(this)} className="btn front-page-btn">Change View</button>
+      <div>
+        <a href="/maps" className="btn front-page-btn">Explore</a>
+        <button onClick={this.handleClick.bind(this)} className="btn front-page-btn">Change View</button>
+      </div>
     </div>
     )
   }

@@ -21905,9 +21905,18 @@
 	        null,
 	        this.renderView(),
 	        _react2.default.createElement(
-	          'button',
-	          { onClick: this.handleClick.bind(this), className: 'btn front-page-btn' },
-	          'Change View'
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { href: '/maps', className: 'btn front-page-btn' },
+	            'Explore'
+	          ),
+	          _react2.default.createElement(
+	            'button',
+	            { onClick: this.handleClick.bind(this), className: 'btn front-page-btn' },
+	            'Change View'
+	          )
 	        )
 	      );
 	    }

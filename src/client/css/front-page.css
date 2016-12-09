@@ -27,6 +27,18 @@
     border: 1px solid white;
     outline: none;
     border-radius: 0;
+    display: inline-block;
+}
+
+.front-page-container a, a:hover {
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 0;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-right: 0.5rem;
 }
 
 .front-page-btn.active.focus, .front-page-btn.active:focus, 
