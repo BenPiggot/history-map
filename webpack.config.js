@@ -1,10 +1,13 @@
 var path = require('path');
 
 module.exports = {  
-  entry: path.resolve(__dirname, './src/client/entry.js'),
+  entry: { 
+    home: './src/client/home.js',
+    maps: './src/client/maps.js'
+  },
   output: {
     path: path.resolve(__dirname, './dist/public'),
-    filename: 'bundle.js'
+    filename: '[name].bundle.js'
   },
 
   module: {

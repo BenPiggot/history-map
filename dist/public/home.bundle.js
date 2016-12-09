@@ -62,6 +62,8 @@
 
 	$('.carousel').carousel();
 
+	_reactDom2.default.render(_react2.default.createElement(_Explainer2.default, null), document.getElementById('explainer'));
+
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {

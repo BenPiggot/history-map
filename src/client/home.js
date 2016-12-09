@@ -4,3 +4,4 @@ import Explainer from "./components/Explainer.jsx"
 
 $('.carousel').carousel();
 
+ReactDOM.render(<Explainer />, document.getElementById('explainer'));
