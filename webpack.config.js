@@ -2,11 +2,11 @@ var path = require('path');
 
 module.exports = {  
   entry: { 
-    home: './src/client/home.js',
-    maps: './src/client/maps.js'
+    home: './src/client/js/home.js',
+    maps: './src/client/js/maps.js'
   },
   output: {
-    path: path.resolve(__dirname, './dist/public'),
+    path: path.resolve(__dirname, './dist/public/js'),
     filename: '[name].bundle.js'
   },
 
