@@ -59,6 +59,7 @@ class Explainer extends Component {
       { this.renderView() }
       <div>
         <a href="/maps" className="btn front-page-btn">Explore</a>
+        <a href="/auth/register" data-toggle="modal" data-target="#register-modal" className="btn font-page-btn">Register</a>
         <button onClick={this.handleClick.bind(this)} className="btn front-page-btn">Change View</button>
       </div>
     </div>

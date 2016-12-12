@@ -20,6 +20,10 @@ var _maps = require('./controllers/maps');
 
 var _maps2 = _interopRequireDefault(_maps);
 
+var _auth = require('./controllers/auth');
+
+var _auth2 = _interopRequireDefault(_auth);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var app = (0, _express2.default)();
@@ -30,6 +34,7 @@ app.set('views', __dirname + '/views');
 app.use(_express2.default.static(__dirname + "/public"));
 
 app.use("/maps", _maps2.default);
+app.use("/auth", _auth2.default);
 
 app.get('/', function (req, res) {
   res.render('index');

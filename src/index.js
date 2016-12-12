@@ -2,6 +2,7 @@ import express from 'express';
 import ejs from 'ejs';
 import bodyParser from 'body-parser';
 import mapsCtrl from "./controllers/maps";
+import authCtrl from "./controllers/auth";
 
 const app = express();
 const router = express.Router();
@@ -11,6 +12,7 @@ app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + "/public"));
 
 app.use("/maps", mapsCtrl);
+app.use("/auth", authCtrl);
 
 app.get('/', (req, res) => {
  res.render('index');
