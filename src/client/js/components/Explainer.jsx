@@ -58,9 +58,10 @@ class Explainer extends Component {
     <div>
       { this.renderView() }
       <div>
-        <a href="/maps" className="btn front-page-btn">Explore</a>
+        <a href="/maps" className="btn front-page-btn" >Explore</a>
+        <a href="/auth" className="btn front-page-btn" data-toggle="modal" data-target="#login-modal">Login</a>
         <a href="/auth/register" data-toggle="modal" data-target="#register-modal" className="btn font-page-btn">Register</a>
-        <button onClick={this.handleClick.bind(this)} className="btn front-page-btn">Change View</button>
+        <button onClick={this.handleClick.bind(this)} className="btn front-page-btn">More Info</button>
       </div>
     </div>
     )

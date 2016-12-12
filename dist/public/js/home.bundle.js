@@ -21914,13 +21914,18 @@
 	          ),
 	          _react2.default.createElement(
 	            'a',
+	            { href: '/auth', className: 'btn front-page-btn', 'data-toggle': 'modal', 'data-target': '#login-modal' },
+	            'Login'
+	          ),
+	          _react2.default.createElement(
+	            'a',
 	            { href: '/auth/register', 'data-toggle': 'modal', 'data-target': '#register-modal', className: 'btn font-page-btn' },
 	            'Register'
 	          ),
 	          _react2.default.createElement(
 	            'button',
 	            { onClick: this.handleClick.bind(this), className: 'btn front-page-btn' },
-	            'Change View'
+	            'More Info'
 	          )
 	        )
 	      );
