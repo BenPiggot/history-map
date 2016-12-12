@@ -1,24 +1,36 @@
 - Maps
-  - Names
-  - Markers
-  - Lat
-  - Long
-  - Discussion
-  - Newsfeed
+  attributes
+    - Name <string>
+    - Lat <float>
+    - Long <float>
+    - Style <string>
+    - Topic <string>
+  associations
+    - [ Marker +]
+    - [ Discussion+ ]
 
 - Markers
-  - Title
-  - Text
-  - Image
-  - Lat
-  - Long
+  attributes
+    - Title <string>
+    - Text <text>
+    - [ Asset+ ]
+    - Lat <flaot>
+    - Long <float>
 
-- Newsfeed (API only?)
+- Asset
+  attributes
+    - Title <string>
+    - Author <string>
+    - Path <string>
 
 - Discussion
-  - Comments
+  assocations
+    - [ Comments+ ]
 
 - Comments
-  - Author
-  - Time
-  - Text
+  attributes
+    - Author <string>
+    - Time <datetime>
+    - Text <text>
+    - Video <string>
+    - Image <string>
