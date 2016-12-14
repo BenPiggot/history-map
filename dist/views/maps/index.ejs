@@ -4,7 +4,20 @@
   <!-- Remeber to put all the content you want on top of the slider below the slider code -->
   <div id='mapid'></div>
   <div class='shadow-cover'>
-    <div class='map-index-header'>Map Landing Page</div>
+    <div class='map-index-header'>Explore the World</div>
+  </div>
+
+  <div class="row maps-list">
+    <div class="col-sm-3">
+      <h2>Maps</h2>
+      <% mapList.forEach( function(map) { %>
+        <div><%= map.latitude %></div>
+      <% }) %>
+    </div>
+
+    <div class="col-sm-6">
+      <button class="btn btn-info-outline btn-block btn-square">Create a New Map</button>
+    </div>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>

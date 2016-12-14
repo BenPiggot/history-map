@@ -17,7 +17,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var router = _express2.default.Router();
 
 router.get('/', function (req, res) {
-  res.render('maps/index');
+  _models2.default.map.findAll().then(function (map) {
+    var locals = { mapList: map };
+    res.render('maps/index', locals);
+  });
 });
 
 exports.default = router;

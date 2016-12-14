@@ -22,3 +22,16 @@
   background-color: rgba(0,0,0,0.62);
 }
 
+.maps-list {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 100%;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+.maps-list h2 {
+  margin-bottom: 0.5rem;
+}
+
