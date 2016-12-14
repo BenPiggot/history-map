@@ -159,6 +159,14 @@ html {
 .modal-custom {
   font-family: 'Raleway', sans-serif;
 }
+
+.modal-content {
+  border-radius: 0;
+}
+
+.btn-modal {
+  border-radius: 0;
+}
 /* MAPS VIEWS */
 
 #mapid {

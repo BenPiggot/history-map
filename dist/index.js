@@ -40,10 +40,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var app = (0, _express2.default)();
 
-_models2.default.map.create({ topic: 'Commerce', theme: 'mostlyGray', latitude: 47.6130284, longitude: -122.3420645 }).then(function (map) {
-  console.log('success');
-});
-
 app.use(_express2.default.static(__dirname + "/public"));
 app.use(_bodyParser2.default.urlencoded({ extended: false }));
 
